@@ -20,7 +20,7 @@ atualiza cadastro fornecedor <br/>
 Backend: <br/>
 Framework utilizado para criação REST: Jersey Versão 2.29.1  <br/>
 Framework para persistência dos dados: Hibernate Versão 5.4.10.Final 
- <br/>
+ <br/> <br/>
 Frontend: <br/>
 Framework para MVC: AngularJS Versão 1.7.9  <br/>
 Estilização das páginas: Bootstrap v3.4.1 <br/>
