@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+<meta charset="ISO-8859-1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="resource/js/jquery-3.4.1.min.js"></script>
+<script src="resource/js/angular.min.js"></script>
+<script src="resource/js/bootstrap.min.js"></script>
+ <script src="resource/controllers/app.js"></script>
+<link href="resource/css/bootstrap.min.css" rel="stylesheet">
+<title>Fornecedores - Neomind</title>
+
+<script>
+	
+</script>
+</head>
+<body>
+	<div ng-controller="FornecedorCadastra">
+		<div class="container">
+			<h2>Cadastro de Fornecedores</h2>
+			<ul class="nav nav-tabs" role="tablist">
+				<li class="active"><a href="cadastro.html">Cadastrar</a></li>
+				<li><a href="lista.html">Listar</a></li>
+			</ul>
+			<form class="container" style="padding: 5%">
+				<div class="form-group">
+					<input type="hidden" ng-model="fornecedor.id" id="id">
+					<div class="row">
+
+						<div class="col">
+							<label for="email">Nome:</label> <input type="text"
+								ng-model="fornecedor.name" required id="name" class="form-control"
+								placeholder="Name">
+						</div>
+						<div class="col">
+							<label for="email">Email</label> <input type="text"
+								ng-model="fornecedor.email" id="email" class="form-control"
+								placeholder="Email">
+						</div>
+						<div class="col">
+							<label for="email">Cidade</label> <input type="text"
+								ng-model="fornecedor.cidade" id="cidade" class="form-control"
+								placeholder="Cidade">
+						</div>
+						<div class="col">
+							<label for="email">Estado</label> <input type="text"
+								ng-model="fornecedor.estado" id="estado" class="form-control"
+								placeholder="Estado">
+						</div>
+						<div class="col">
+							<label for="email">Pais</label> <input type="text"
+								ng-model="fornecedor.pais" id="pais" class="form-control"
+								placeholder="Pais">
+						</div>
+						<div class="col">
+							<label for="email">CNPJ</label> <input type="text"
+								ng-model="fornecedor.cnpj" id="cnpj" required class="form-control"
+								placeholder="CNPJ">
+						</div>
+							<div id="resultado" class="alert"> </div>
+						<div class="row" >
+							<div class="col align-self-end">
+								<button type="button" class="btn btn-primary btn-block"
+									ng-click="addFornecedor(fornecedor.name, fornecedor.email,fornecedor.cidade,fornecedor.estado,fornecedor.pais,fornecedor.cnpj)"
+									ng-show="cadastrar">Cadastrar</button>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</form>
+			
+		</div>
+</body>
+</html>
