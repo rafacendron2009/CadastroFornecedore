@@ -1,4 +1,4 @@
-# CadastroFornecedore
+# Cadastro Fornecedores
 
 Este projeto foi desenvolvido para testar as capacidades de desenvolvimento utilizando REST <br/>
 
